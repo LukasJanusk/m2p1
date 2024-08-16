@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div>
+          <label for="destination">Destination</label>
+          <select name="destination" id="destination">
+                <option value="" disabled selected hidden>Destination</option>
+                <option value="paris">Paris</option>
+                <option value="tokyo">Tokyo</option>
+                <option value="sydney">Sydney</option>
+                <option value="sanFrancisco">San Francisco</option>
+          </select>
+        </div>
+        <div>
+            <label for="from">From</label>
+            <input type="date" id="from" name="from" value="from">
+        </div>
+        <div>
+            <label for="to">To</label>
+            <input type="date" id="to" name="to" value="to">
+        </div>
+        <div>§
+          <label for="guests">Guests</label>
+          <input type="number" id="guests" name="guests" value="2" min="1">
+        </div>
+        <div>
+          <button type="submit">
+            -&gt;
+          </button>
+        </div>
+      </form>
+      
+</body>
+</html>
