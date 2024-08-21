@@ -1,0 +1,70 @@
+footer {
+   background-color: #ffc107;
+   min-height: 300px;
+   font-size: larger;
+   height: auto;
+}
+footer > p, form {
+    width: 100%;
+}
+a {
+    color: black;
+}
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 316px;
+}
+.footer-item {
+    width: 95%;
+    flex: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 10px;
+}
+.footer-item-element {
+    width: 100%;
+
+}
+.subscribe1 {
+    width: 95%;
+}
+.subscribe1 form {
+    display: flex;
+    width: 100%;
+}
+.subscribe1 input[type="email"] {
+    width: 80%;
+    flex: 1;
+    margin-right: 5px;
+ }
+.subscribe1 button {
+    flex: 0 0 auto;
+    background-color: #198754;
+    color: white;
+    border: 1px solid transparent;
+  }
+
+@media (width >=768px) {
+    footer {
+        height: 30vh;
+        font-size: large;
+    }
+    .footer-item {
+        flex: 1 1;
+        box-sizing: border-box;
+        padding: 20px;
+        margin: 10px;
+    }
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media (width >=968px) {
+    .footer-container {
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+}
