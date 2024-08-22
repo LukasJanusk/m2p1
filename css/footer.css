@@ -44,6 +44,11 @@ a {
     background-color: #198754;
     color: white;
     border: 1px solid transparent;
+    border-radius: 3rem;
+  }
+  .subscribe1 button:hover {
+    background-color: #09673b;
+    border: 1px solid #0a5c36 ;
   }
 
 @media (width >=768px) {

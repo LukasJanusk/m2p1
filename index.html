@@ -39,7 +39,7 @@
         </div>
         <div class="search-item search-bars">
           <nav class="d-none d-md-block">
-            <a id="destinations-link" href="#destinations">Destinations</a>
+            <a id="destinations-link" href="destinations.html">Destinations</a>
             <a id="sign-in" href="#" class="btn btn-light">Sign in</a>
           </nav>
           <img src="./icons/three-bars-white.svg" class="d-md-none menu-bars" alt="Menu">
@@ -53,42 +53,37 @@
         </h1>
       </div>
       <!-- Booking form -->
+      <form class="form-group">
       <div class="header-item form-container">
         <div class="form-item form1">
-          <form class="form-group">
           <label for="destination">Destination</label><br>
-            <select class="form-control" name="destination" id="destination">
+            <select class="form-control" name="destination" id="destination" required>
                   <option value="" disabled selected hidden>Destination</option>
                   <option value="paris">Paris</option>
                   <option value="tokyo">Tokyo</option>
                   <option value="sydney">Sydney</option>
                   <option value="sanFrancisco">San Francisco</option>
             </select>
-          </form>
           </div>
         <div class="form-item form2">
-          <form class="form-group">
             <label for="from">From</label><br>
-            <input class="form-control" type="date" id="from" name="from" value="from">
-          </form>
+            <input class="form-control" type="date" id="from" name="from" value="from" required>
         </div>
         <div class="form-item form3">
-          <form class="form-group">
             <label for="to">To</label><br>
-            <input class="form-control" type="date" id="to" name="to" value="to">
-          </form>
+            <input class="form-control" type="date" id="to" name="to" value="to" required>
         </div>
         <div class="form-item form4">
-          <form class="form-group">
             <label for="guests">Guests</label><br>
-            <input class="form-control" type="number" id="guests" name="guests" value="2" min="1" max="10">
-          </form>
+            <input class="form-control" type="number" id="guests" name="guests" value="2" min="1" max="10" required>
         </div>
-        <div class="form-item button">
-          <button class="btn btn-warning" title="Search" type="submit">
+        <div class="form-item button" id="submit-button">
+          <button for="form-group" class="btn btn-warning" title="Search" type="submit">
             <img src="./icons/arrow-right.svg" alt="arrow">
           </button>
         </div>
+      </div>
+      </form>
     </div>
     </header>
     <section>
@@ -164,7 +159,7 @@
         <h3>Links</h3>
         <nav>
           <a href="index.html">Home</a><br>
-          <a href="#destinations">Destinations</a><br>
+          <a href="destinations.html">Destinations</a><br>
           <a href="about.html">About</a><br>
           <a href="contact.html">Contact</a><br>
         </nav>
@@ -194,4 +189,3 @@
     </footer>
   </body>
 </html>
-s

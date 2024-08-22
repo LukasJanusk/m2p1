@@ -1,0 +1,115 @@
+
+#contact-form {
+    padding: 20px;
+    min-height: 40vh;
+}
+#contact-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 4fr 1fr;
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+.contact-item {
+    width: 100%;
+    justify-self: center;
+    min-width: 300px;
+    font-size: x-large;
+}
+.contact-item * input {
+    min-height: 35px;
+    width: 100%;
+    margin-top: 2px;
+}
+.contact-item * textarea {
+    margin-top: 5px;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+#submit {
+    margin-top: 10px;
+    min-height: 50px;
+    width: 100%;
+    color: white;
+    background-color: #198754;
+    border-radius: 3rem;
+    border: 1px solid transparent;
+}
+#submit:hover {
+    background-color: #09673b;
+    border: 1px solid #0a5c36 ;
+}
+#message {
+    min-height: 300px;
+    min-width: 300px;
+    width: 100%;
+}
+@media (width >=768px) {
+    #contact-form {
+        margin: 20px;
+        font-size: medium;
+    }
+    .contact-item {
+        font-size: medium;
+    }
+    #contact-container {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 2fr;
+        width: 100%;
+        margin: 20px;
+    }
+    #name-form {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        margin-right: 15px;
+        max-width: 200px;
+        justify-self: start;
+    }
+    #last-form {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        margin-right: 15px;
+        max-width: 200px;
+        justify-self: start;
+    }
+    #email-form {
+        grid-row-start: 3;
+        grid-column-start: 1;
+        margin-right: 15px;
+        max-width: 200px;
+        justify-self: start;
+    }
+    #phone-form {
+        grid-row-start: 4;
+        grid-column-start: 1;
+        margin-right: 15px;
+        max-width: 200px;
+        justify-self: start;
+    }
+    #message-form {
+        grid-column-start: 2;
+        grid-row: span 4;
+        padding-bottom: 15px;
+    }
+    #button-form {
+        max-width: 400px;
+        grid-row-start: 5;
+        grid-column: 2;
+        justify-self: end;
+    }
+    #message > textarea {
+        height: 30%;
+    }
+}
+@media (width >= 968px) {
+    #contact-form {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}

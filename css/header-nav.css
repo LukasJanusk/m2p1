@@ -1,0 +1,125 @@
+header {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../images/header-small.jpg");
+    background-size: cover;
+    color: white;
+    height: 30vh;
+    min-height:200px;
+    min-width: 316px;
+    font-size: large;
+}
+h1 {
+    font-size: 60px;
+    font-weight: 700;
+    padding: 10px;
+}
+#search {
+    background-color: transparent;
+    border: transparent;
+    color: white;
+}
+#search::placeholder {
+    color: white;
+}
+#destinations-link {
+    color: white;
+    text-decoration: none;
+}
+#destinations-link:hover {
+    text-decoration:underline;
+}
+#contact {
+    border-radius: 3rem;
+    justify-self: right;
+}
+#contact:hover {
+    color: white;
+    background-color: #ffc107;
+}
+#contact:active {
+    color: white;
+    background-color: #ffc107;
+}
+.header-container {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    min-height: 20vh;
+    height: 20vh;
+    min-height: 200px;
+    min-width: 300px;
+}
+.header-item {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 20px;
+}
+hr {
+    width: calc(24px + 300%);
+    margin-left: -24px;
+}
+.header-search-container {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.015));
+    width: 100%;
+    height: 90px;
+    display: grid;
+    grid-template-columns: 24px 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.header-search-container > .search-image {
+    min-width: 50px;
+    justify-self: center;
+}
+.header-search-container > .search-bars {
+    justify-self: end;
+    text-align: end;
+}
+.search-bars > nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-item {
+    min-height: 60px;
+}
+@media (width <=362px) {
+    h1 {
+        font-size: 50px;
+    }
+    header {
+        min-height: 300px;
+    }
+    .header-container {
+        padding-bottom: 20px;
+        min-height: 300px;
+    }
+}
+@media (width < 768px) {
+    .header-search-container * {
+        min-height: 40px;
+    }
+}
+@media (width >=768px) {
+    .header-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 3r 1fr;
+        min-height: 200px;
+    }
+    header {
+        min-height: 200px;
+    }
+    .header-search-container > .search-bars {
+        min-width: 250px;
+    }
+    .search-bars {
+        width: 100%;
+    }
+}
+@media (width >=968px) {
+    .header-container {
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+}

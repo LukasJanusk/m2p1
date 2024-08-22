@@ -7,10 +7,6 @@ header {
     min-width: 316px;
     font-size: large;
 }
-/* h1, h2, h3, h4, h5, h6, p {
-    font-family: 'Montserrat';
-    font-weight: 400;
-} */
 h1 {
     font-size: 50px;
     font-weight: 700;
@@ -29,6 +25,9 @@ h1 {
 }
 #destinations-link:hover {
     text-decoration:underline;
+}
+#sign-in {
+    border-radius: 3rem;
 }
 #sign-in:hover {
     color: white;
@@ -123,6 +122,7 @@ hr {
     width: 100%;
     background-color: #ffc107;
     border: solid transparent;
+    border-radius: 3rem;
 }
 @media (width <=362px) {
     header {
@@ -184,5 +184,10 @@ hr {
     }
     .form-item {
         width: 100%;
+    }
+}
+@media (width < 768px) {
+    .header-search-container * {
+        min-height: 40px;
     }
 }

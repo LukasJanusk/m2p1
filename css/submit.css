@@ -1,0 +1,56 @@
+#message {
+    font-size: 40px;
+    min-height: 40vh;
+}
+#mail-icon {
+    width: 200px;
+    height: auto;
+}
+.submited-container {
+    height: auto;
+    min-height: 100vh;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 4fr 1fr;
+}
+#home * button{
+    border-radius: 3rem;
+    color: black;
+    background-color: #198754;
+    border: 1px solid transparent
+}
+#home * button:hover {
+    background-color: #09673b;
+    border: 1px solid #0a5c36 ;
+}
+@media (width >=768px) {
+    .submited-container {
+        padding: 20px;
+    }
+    .submited-container {
+        height: 100vh;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 2fr;
+    }
+    #mail {
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+    #message {
+        grid-row-start: 1;
+        grid-column-start: 2;
+    }
+    #home {
+        grid-row-start: 2;
+        grid-column-start: 2;
+        justify-self: end;
+    }
+}
+@media (width >=968px) {
+    .submited-container {
+        padding: 100px;
+    }
+}
