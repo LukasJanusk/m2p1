@@ -124,6 +124,11 @@ hr {
     border: solid transparent;
     border-radius: 3rem;
 }
+.button button:hover {
+    background-color: #198754;
+    border: 0.5px solid #09673b;
+
+}
 @media (width <=362px) {
     header {
         min-height: 650px;

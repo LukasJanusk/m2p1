@@ -1,17 +1,34 @@
-.destinations-container {
+#destinations-container {
     background-color: white;
     display: grid;
+    min-height: 80vh;
+    min-width: 360px;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
-    font-size: larger;
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-h2 {
-    font-size: 40px;
+    grid-template-rows: repeat(4, 1f);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 .destinations-item {
-    padding: 20px;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    margin-bottom: 40px;
+}
+.destinations-item > h1 {
+    max-height: 100px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 3000;
+    font-size: 60px;
+}
+.destinations-image-container {
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto;
+}
+.destinations-image img {
+    border-radius: 3rem;
 }
 .card-img-overlay {
     display: flex;
@@ -20,81 +37,60 @@ h2 {
     align-content: center;
     text-align: center;
     font-size:larger;
-    border-radius: 3rem;
-    background: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 0.9)
-      );
     color: white;
+    opacity: 0.6;
 }
 .card-img-overlay:hover {
     background: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 0.4)
+        rgba(0, 0, 0, 0.5)
       );
-      color: white;  
+    border-radius: 3rem; 
+    opacity: 1; 
 }
 .card-img-overlay > h2 {
     font-family: 'Dancing Script', cursive;
-    font-weight: 700;
-}
-.card-img-overlay > p {
-    padding-bottom: 30px;
-    opacity: 0.6;
-
-}
-.destinations-image-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    align-items: center;
+    font-weight: 800;
+    font-size: 50px;
+    padding-bottom: 20px;
 }
 .destinations-image {
     box-sizing: border-box;
-    border-radius: 3rem;
-    padding: 2px;
     border: 1px solid transparent;
+    padding: 2px
 }
 .destinations-image img {
     width: 100%;
     min-width: 150px;
     max-width: 100%;
     height: auto;
-    border-radius: 3rem;
 }
-.destiantions-image * a {
-    color: white;
-}
-.destiantions-image * a:hover {
-    color: white;
+@media (width < 400) {
+    .destinations-container {
+        min-height: 80vh;
+        margin-right: 2px;
+        margin-left: 2px;
+    }
 }
 @media (width >=768px) {
     .destinations-container {
-        min-height: 1vh;
-        font-size: medium;
-    }
-    .destinations-text-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-    }
-    .destinations-text {
-        padding-right: 15px;
+        min-height: 80vh;
+        margin-right: 30px;
+        margin-left: 30px;
     }
     .destinations-image-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
-        border-radius: 0 0 0 0;
     }
     .destinations-image img {
-        border-radius: 0 0 0 0;
+        border-radius: 0rem;
     }
-    .card-img-overlay {
-        color: white;
-        border-radius:  0 0 0 0;
+    .card-img-overlay > h2 {
+        font-family: 'Dancing Script', cursive;
+        font-weight: 800;
+        font-size: 50px;
     }
     .card-img-overlay:hover {
         background: linear-gradient(
@@ -103,6 +99,7 @@ h2 {
             rgba(0, 0, 0, 0.5)
           );
         color: white;
+        border-radius: 3rem 0 0 3rem;  
     }
     #first {
         border-radius: 3rem 0 0 3rem;
@@ -115,5 +112,7 @@ h2 {
     .destinations-container {
         margin-right: 100px;
         margin-left: 100px;
+        padding-right: 100px;
+        padding-left: 100px;
     }
 }

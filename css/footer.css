@@ -48,7 +48,17 @@ a {
   }
   .subscribe1 button:hover {
     background-color: #09673b;
-    border: 1px solid #0a5c36 ;
+    border: 1px solid #0a5c36;
+  }
+  .subscribe1 button:active {
+    background-color: #0a5c36;
+  }
+  .footer1 * a {
+    color: black;
+    text-decoration: none;
+  }
+  .footer1 * a:hover {
+    text-decoration: underline;
   }
 
 @media (width >=768px) {
