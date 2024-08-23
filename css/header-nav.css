@@ -123,3 +123,10 @@ hr {
         margin-left: 100px;
     }
 }
+@media (width >=2000px) {
+    h1 {
+        font-size: 120px;
+        font-weight: 700;
+        padding: 10px;
+    }
+}

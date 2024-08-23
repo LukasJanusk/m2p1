@@ -1,10 +1,22 @@
 #message {
-    font-size: 40px;
+    font-size: 30px;
     min-height: 40vh;
+    text-align:left;
 }
 #mail-icon {
     width: 200px;
     height: auto;
+    justify-self: center;
+}
+#mail {
+    text-align: center;
+    justify-content: center;
+}
+#mail img {
+    justify-self: center;
+}
+.submit-item {
+    padding: 10px;
 }
 .submited-container {
     height: auto;
@@ -12,9 +24,11 @@
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 2fr 4fr 1fr;
+    grid-template-rows: auto auto auto;
 }
 #home * button{
+    height: 60px;
+    width: 100%;
     border-radius: 3rem;
     color: black;
     background-color: #198754;
@@ -26,22 +40,22 @@
 }
 @media (width >=768px) {
     .submited-container {
-        padding: 20px;
-    }
-    .submited-container {
+        min-height: 534px;
         height: 100vh;
         padding: 20px;
         display: grid;
         grid-template-columns: 2fr 2fr;
-        grid-template-rows: 2fr;
+        grid-template-rows: auto;
     }
     #mail {
         grid-row-start: 1;
         grid-column-start: 1;
+        justify-self: center;
     }
     #message {
         grid-row-start: 1;
         grid-column-start: 2;
+        padding-top: 40px;
     }
     #home {
         grid-row-start: 2;
@@ -50,7 +64,70 @@
     }
 }
 @media (width >=968px) {
+    #mail {
+        text-align: center;
+        justify-content: center;
+    }
+    #mail img {
+        width: 300px;
+        grid-row-start: 1;
+        grid-column-start: 1;       
+    }
+    #mail h1 {
+        font-size: 80px;
+
+    }
+    #message p {
+        font-size: 35px;
+    }
+    #home {
+        grid-row-start: 2;
+        grid-column-start: 2;
+        justify-self: end;
+    }
+    #home button {
+        min-height: 50px;
+        min-width: 300px;
+    }
+}
+@media (width >= 1400px) {
     .submited-container {
-        padding: 100px;
+        min-height: 740px;
+    }
+    #mail img {
+        width: 400px;
+        grid-row-start: 1;
+        grid-column-start: 1; 
+    }
+    #message p {
+        font-size: 50px;
+    }
+    #home button {
+        min-height: 80px;
+        min-width: 500px;
+    }
+}
+@media (width >= 2000px) {
+    .submited-container {
+        min-height: 940px;
+    }
+    #mail img {
+        width: 600px;
+    }
+    #message p {
+        font-size: 60px;
+        padding-right: 300px;
+    }
+    #home {
+        padding-right: 300px;
+    }
+    #home button {
+        min-height: 100px;
+        min-width: 700px;
+        font-size: 30px;
+        border-radius: 10rem;
+    }
+    #home button > img {
+        width: 30px;
     }
 }
