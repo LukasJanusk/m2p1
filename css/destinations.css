@@ -101,10 +101,10 @@
         color: white;
         border-radius: 3rem 0 0 3rem;  
     }
-    #first {
+    .destinations-image-container * .first {
         border-radius: 3rem 0 0 3rem;
     }
-    #last {
+    .destinations-image-container * .last {
         border-radius: 0 3rem 3rem 0;
     }
 }

@@ -8,7 +8,7 @@ header {
     font-size: large;
 }
 h1 {
-    font-size: 58px;
+    font-size: 60px;
     font-weight: 700;
     padding: 10px;
 }
@@ -108,7 +108,12 @@ hr {
         min-height: 200px;
     }
     header {
-        min-height: 200px;
+        min-height: 250px;
+    }
+    h1 {
+        font-size: 90px;
+        font-weight: 700;
+        padding: 10px;
     }
     .header-search-container > .search-bars {
         min-width: 250px;
@@ -128,5 +133,8 @@ hr {
         font-size: 120px;
         font-weight: 700;
         padding: 10px;
+    }
+    .header {
+        min-height: 500px;
     }
 }

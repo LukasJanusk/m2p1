@@ -55,7 +55,7 @@
         </div>
     </header>
     <div id="contact-form" class="contact-form">
-        <form class="form-group" action="submited.html" method="get">
+        <form class="form-group" action="submited.html#submited-container" method="get">
         <div id="contact-container" class="contact-container">
             <div class="contact-item" id="name-form">
                     <label for="name">First*</label><br>
@@ -71,20 +71,18 @@
             </div>
             <div class="contact-item" id="phone-form">
                     <label for="phone-number">Phone number*</label><br>
-                    <input class="form-control" type="number" id="phone-number" value="phone-number" placeholder="+370 856 88 650">
+                    <input class="form-control" type="number" id="phone-number" placeholder="+370 856 88 650">
             </div>
             <div class="contact-item" id="message-form">
                     <label for="message">Message*</label><br>
                     <textarea class="form-control" id="message" name="message" placeholder="Type your message here" required></textarea>
             </div>
             <div class="contact-item" id="button-form">
-              <a href="submited.html#submited-container" class="btn-link">
-                  <button id="submit" type="button" class="btn btn-primary btn-lg round">
-                      Submit
-                      <img src="./icons/arrow-right-white.svg" alt="Arrow">
-                  </button>
-              </a>
-          </div>
+                <button type="submit" id="submit" class="btn-link btn btn-primary btn-lg round">
+                  Submit
+                  <img src="./icons/arrow-right-white.svg" alt="Arrow">
+                </button>
+            </div>
         </div>
         </form>
     </div>

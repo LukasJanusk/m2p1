@@ -39,6 +39,7 @@ input[type="number"] {
     background-color: #198754;
     border-radius: 3rem;
     border: 1px solid transparent;
+    text-decoration: none;
 }
 #submit:hover {
     background-color: #09673b;
@@ -102,8 +103,9 @@ input[type="number"] {
         grid-row-start: 5;
         grid-column: 2;
         justify-self: end;
+        text-decoration: none;
     }
-    #button-form * button {
+    #button-form > button {
         justify-self: flex-end;
     }
     #message > textarea {
